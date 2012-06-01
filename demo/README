@@ -1,0 +1,3 @@
+In order to use node traceur on directories, do this:
+
+traceurc es6 es5

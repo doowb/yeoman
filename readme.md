@@ -1,37 +1,5 @@
-# Welcome, Friend!
+This branch:
 
-## Installing
-
-```shell
-    ./install.sh
-```
-
-Oh. That's it.
-
-
-## Running
-
-Here's a small shell script that you can save as `server.sh` which opens and servers the current directory on the port specified:
-
-```shell
-    port=$1
-    if [ $#  -ne  1 ]
-    then
-      port=8000
-    fi
-
-    if [ $(uname -s) == "Darwin" ]
-    then
-      open=open
-    else
-      open=xdg-open
-    fi
-
-    $open http://localhost:$port && python -m SimpleHTTPServer $port;
-```
-
-For example, run this guy as:
-
-```shell
-    ./server.sh 8000
-```
+* node-traceur: traceur module for node, last updated 8 months ago. Works, but breaks with the latest traceur. I've experimented with converting modules using it and pulling them into AMD
+* require-hm: work on an AMD/RequireJS compatible solution for ES6 modules. This all seems to work fine, with some minor quid pro quos. You have to use the .hm extension for modules and there are very minor syntax gotchas.
+* traceur: latest version of traceur, here for testing.
