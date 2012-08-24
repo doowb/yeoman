@@ -33,6 +33,7 @@ module.exports = function(grunt) {
   //              maintained (todo: inline script/style minified)
   // - basics   - same as buildkit plus minor html optimizations
   // - minify   - same as build plus full html minification
+  //"default" : 'coffee compass                rjs concat css min img rev usemin manifest',
   var targets = {
     "default" : 'coffee compass                rjs concat css min img rev usemin manifest',
     usemin    : 'coffee compass usemin-handler rjs concat css img rev usemin manifest',

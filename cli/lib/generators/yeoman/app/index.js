@@ -259,7 +259,7 @@ AppGenerator.prototype.requirejs = function requirejs(){
       // Wire RequireJS/AMD (usemin: js/amd-app.js)
       var body = self.read(path.resolve('app/index.html'));
       body = self.appendScripts(body, 'scripts/amd-app.js', ['scripts/vendor/require.js'], {
-        'data-main': 'main'
+        'data-main': 'scripts/main'
       });
       self.write('app/index.html', body);
 

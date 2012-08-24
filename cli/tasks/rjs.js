@@ -21,9 +21,12 @@ module.exports = function(grunt) {
 
     // automatic configuration via mainConfigFile, assumed to be the app entry
     // point
+
     if(options.name) {
       options.mainConfigFile = options.mainConfigFile || path.join(options.baseUrl, options.name + '.js');
     }
+
+    options.baseUrl = './scripts';
 
     grunt.log.subhead('Options:')
       .writeln(grunt.helper('inspect', options));
