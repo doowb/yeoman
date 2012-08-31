@@ -85,7 +85,6 @@ module.exports = function(grunt) {
 
 
           // Handler for RequireJS app config.
-          //
           // Wires up the relevant RequireJS config when
           // running `yeoman install spine backbone` etc.
 
@@ -111,8 +110,6 @@ module.exports = function(grunt) {
 
               // replace the existing paths with your new paths
               var html = cf.replace(' paths: {', 'paths: {\n' + scripts);
-
-              console.log(html);
 
               // Write the paths to config
               fs.writeFileSync(requireConfigPath, html, 'utf8');
